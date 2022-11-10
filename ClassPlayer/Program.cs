@@ -12,24 +12,24 @@
 
     class Player
     {
-        public int Health;
-        public int Damage;
+        private int _health;
+        private int _damage;
 
         public Player(int health, int damage)
         {
-            Health = health;
-            Damage = damage;
+            _health = health;
+            _damage = damage;
         }
 
         public Player()
         {
-            Health = 100;
-            Damage = 10;
+            _health = 100;
+            _damage = 10;
         }
     
         public void ShowStatus()
         {
-            Console.WriteLine("Health: " + Health + "\nDamage: " + Damage);
+            Console.WriteLine("Health: " + _health + "\nDamage: " + _damage);
         }
     }
 }
